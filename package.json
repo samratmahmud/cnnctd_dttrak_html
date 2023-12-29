@@ -1,0 +1,16 @@
+{
+  "name": "cnnctd_dttrak-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "scripts": {
+    "start": "npx tailwindcss -i ./styles/main.css -o ./styles/_main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
