@@ -5,10 +5,10 @@ const closeButton = document.getElementById("close");
 contactButton.addEventListener("click", (e) => {
   e.preventDefault();
   popup.classList.remove("hidden");
-  popup.classList.add("block");
+  popup.classList.add("flex");
 });
 
 closeButton.addEventListener("click", () => {
-  popup.classList.remove("block");
+  popup.classList.remove("flex");
   popup.classList.add("hidden");
 });
