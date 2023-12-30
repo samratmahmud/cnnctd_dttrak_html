@@ -16,13 +16,13 @@
     <div class="max-w-[1080px] mx-auto overflow-hidden pb-12">
       <nav class="relative z-0 py-14 ml-24">
         <div class="flex gap-11 items-center">
-          <a href="#"><img src="/images/logo-dttrak 2.svg" alt="" /> </a>
-          <a href="#"><img src="/images/logo-sba8a.svg" alt="" /> </a>
-          <a href="#"><img src="/images/logo-gsaschedule.svg" alt="" /> </a>
-          <a href="#"><img src="/images/logo-naob.svg" alt="" /> </a>
+          <a href="#"><img src="./images/logo-dttrak 2.svg" alt="" /> </a>
+          <a href="#"><img src="./images/logo-sba8a.svg" alt="" /> </a>
+          <a href="#"><img src="./images/logo-gsaschedule.svg" alt="" /> </a>
+          <a href="#"><img src="./images/logo-naob.svg" alt="" /> </a>
         </div>
-        <a href="#" class="absolute top-0 right-0" role="button">
-          <img src="/images/Button - Contact.svg" alt="" />
+        <a href="#" id="contact" class="absolute top-0 right-0" role="button">
+          <img src="./images/Button - Contact.svg" alt="" />
         </a>
       </nav>
       <div aria-label="Header" class="max-w-[808px] mx-auto pt-16 mb-[87px]">
@@ -44,7 +44,7 @@
         <div class="flex flex-col items-center">
           <img
             class="rounded-[20px] mb-[51px]"
-            src="/images/sterling.png"
+            src="./images/sterling.png"
             alt=""
           />
           <div
@@ -64,7 +64,7 @@
         <div class="flex flex-col items-center">
           <img
             class="rounded-[20px] mb-[51px]"
-            src="/images/natalie.png"
+            src="./images/natalie.png"
             alt=""
           />
           <div
@@ -86,7 +86,7 @@
         <div class="flex flex-col items-center">
           <img
             class="rounded-[20px] mb-[51px]"
-            src="/images/jewel.png"
+            src="./images/jewel.png"
             alt=""
           />
           <div
@@ -104,7 +104,7 @@
           </div>
         </div>
       </div>
-      <div aria-label="Contact" class="max-w-[894px] mx-auto mb-9">
+      <div aria-label="Contact" class="max-w-[894px] mx-auto mb-36">
         <p class="text-xl mb-3 text-center">
           DT-Trak has been certified as “Buy Indian” since its inception in
           2002. DT-Trak is an Native American Owned Business, an SBA 8(a) and
@@ -123,27 +123,27 @@
       </div>
       <div
         aria-label="Footer"
-        class="max-w-[980px] mx-auto bg-gray-800 pt-8 pb-5 rounded-3xl"
+        class="max-w-[980px] mx-auto bg-gray-800 pt-8 pb-5 rounded-3xl fixed bottom-5 left-0 right-0"
       >
         <div class="mb-3 flex gap-24 justify-between px-[64px]">
           <a href="about-us.html" class="flex flex-col items-center gap-4">
-            <img src="/images/Icon - About Us-1.svg" alt="" />
+            <img src="./images/Icon - About Us-1.svg" alt="" />
             <p class="text-sm text-lime-500 font-bold">ABOUT US</p>
           </a>
           <a href="healthcare.html" class="flex flex-col items-center gap-4">
-            <img src="/images/Icon - Healthcare.svg" alt="" />
+            <img src="./images/Icon - Healthcare.svg" alt="" />
             <p class="text-sm text-gray-400">HEALTHCARE</p>
           </a>
           <a href="index.html" class="flex flex-col items-center gap-4">
-            <img class="w-12 h-12" src="/images/Icon - Home (1).svg" alt="" />
+            <img class="w-12 h-12" src="./images/Icon - Home (1).svg" alt="" />
             <p class="text-sm text-gray-400">HOME</p>
           </a>
           <a href="it-solutions.html" class="flex flex-col items-center gap-4">
-            <img src="/images/Icon - IT.svg" alt="" />
+            <img src="./images/Icon - IT.svg" alt="" />
             <p class="text-sm text-gray-400">IT SOLUTIONS</p>
           </a>
           <a href="traker.html" class="flex flex-col items-center gap-4">
-            <img src="/images/Icon - TRAKER.svg" alt="" />
+            <img src="./images/Icon - TRAKER.svg" alt="" />
             <p class="text-sm text-gray-400">TRAKER SaaS</p>
           </a>
         </div>
@@ -152,5 +152,39 @@
         ></div>
       </div>
     </div>
+    <div class="fixed inset-0 z-[1040] overflow-y-auto bg-white/75 backdrop-blur hidden" id="popup">
+      <div
+      class="max-w-[800px] mx-auto pt-5 pb-[91px] pl-14 pr-5 border border-black rounded-3xl shadow-md my-5"
+    >
+      <div class="flex justify-between items-end mb-6">
+        <h2 class="text-5xl font-bold leading-tight">Contact me.</h2>
+        <span id="close" role="button"><img src="./images/close_ring_light.svg" alt="" /></span>
+      </div>
+      <p class="text-3xl leading-normal mb-10">
+        I am interested in talking more about your services and offerings.
+      </p>
+      <div class="max-w-[688px] flex flex-col gap-6">
+        <label>
+          <input
+            class="input-field"
+            type="text"
+            placeholder="My name"
+          />
+        </label>
+          <input
+            class="input-field"
+            type="email"
+            placeholder="My email"
+          />
+        </label>
+        <div class="flex items-center gap-6 mb-10">
+          <button class="text-3xl leading-snug text-white bg-lime-500 hover:bg-lime-600 duration-300 py-4 px-9 rounded-full border border-[#ccc]">CONTACT</button>
+          <p class="text-md">By clicking “CONTACT” you agree to being emailed with more information or a meeting request.</p>
+        </div>
+        <a href="#" class="text-xl underline decoration-2 underline-offset-4">Privacy Policy</a>
+      </div>
+    </div>
+    </div>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
